@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>ことば</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f5f3ee;
+      font-family: "Hiragino Mincho ProN", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #222;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      padding: 24px;
+    }
+
+    .label {
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      opacity: 0.6;
+    }
+
+    .word {
+      font-size: 34px;
+      margin: 24px 0;
+    }
+
+    .origin {
+      font-size: 16px;
+      line-height: 2;
+      opacity: 0.85;
+    }
+
+    .hint {
+      margin-top: 40px;
+      font-size: 12px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="app">
+    <div class="label">今日のことば</div>
+    <div class="word" id="word"></div>
+    <div class="origin" id="origin"></div>
+    <div class="hint">下にスワイプで更新</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
